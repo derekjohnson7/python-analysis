@@ -8,6 +8,7 @@ profits = []
 changes = []
 
 
+
 with open(budgetpath) as csvfile:
     budgetreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(budgetreader)
