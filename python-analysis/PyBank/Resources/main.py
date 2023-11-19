@@ -43,6 +43,6 @@ with open(output_path, 'w') as txtfile:
     txtfile.write(f'\nTotal Months: {len(months)}')
     txtfile.write(f'\nTotal: $ {sum(profits)}')
     txtfile.write(f'\nAverage Change: {round(average_change,2)}')
-    txtfile.write(f'\nGreatest Increase: {months[changes.index(max(changes))]} (${max(changes)})')
-    txtfile.write(f'\nGreatest Decrease: {months[changes.index(min(changes))]} (${min(changes)})')
+    txtfile.write(f'\nGreatest Increase: {months[changes.index(max(changes))+1]} (${max(changes)})')
+    txtfile.write(f'\nGreatest Decrease: {months[changes.index(min(changes))+1]} (${min(changes)})')
     
