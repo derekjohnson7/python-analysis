@@ -28,8 +28,8 @@ print("----------------------------")
 print(f'Total Months: {len(months)}')
 print(f'Total: $ {sum(profits)}')
 print(f'Average Change: ${round(average_change,2)}')
-print(f'Greatest Increase: {months[changes.index(max(changes))]} (${max(changes)})')
-print(f'Greatest Decrease: {months[changes.index(min(changes))]} (${min(changes)})')
+print(f'Greatest Increase: {months[changes.index(max(changes))+1]} (${max(changes)})')
+print(f'Greatest Decrease: {months[changes.index(min(changes))+1]} (${min(changes)})')
 
 
 output_path = os.path.join("analysis","analysis.txt")
